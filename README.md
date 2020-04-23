@@ -1,2 +1,2 @@
-# modal_window
+# game
 ## there my practic for javascript
