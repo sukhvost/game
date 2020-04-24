@@ -1,0 +1,98 @@
+%style-button {
+    width: 150px;
+    background: rgb(75, 134, 134);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: .75rem;
+    transition: .5s;
+}
+
+%style-card {
+    width: 200px;
+    height: 200px;
+    img {
+        width: 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background: url('../img/knb.png'), rgba(0, 0, 0, .7);
+}
+
+.wrap {
+    max-width: 900px;
+    margin: 30px auto;
+    .block_gamer {
+        display: flex;
+        justify-content: space-around;
+        .gamer {
+            button {
+                @extend %style-button;
+                &:hover {
+                    transform: rotate(360deg) scale(1.1);
+                    background: rgb(83, 167, 167);
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .block_card {
+        display: flex;
+        justify-content: center;
+        .card_first_gamer {
+            @extend %style-card;
+        }
+        .card_second_gamer {
+            @extend %style-card;
+        }
+    }
+    .block_score {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        font-weight: 600;
+        .score_1 {}
+        .score_2 {}
+    }
+    .block_result {
+        text-align: center;
+        .result {
+            height: 4rem;
+            margin: 5rem 0 3rem;
+            p {
+                font-size: 2rem;
+                font-weight: 600;
+                color: yellow;
+            }
+            .decor {
+                max-width: 300px;
+                margin: 0 auto;
+                border: 1px solid #eee;
+                background: rgba(0, 0, 0, .5);
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, .8);
+            }
+        }
+        button {
+            @extend %style-button;
+            &:hover {
+                transform: scale(1.1);
+                background: rgb(83, 167, 167);
+                color: #fff;
+            }
+        }
+    }
+}
