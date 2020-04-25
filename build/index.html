@@ -12,39 +12,61 @@
 <body>
 
     <div class="wrap">
-        <div class="block_gamer">
-            <div class="gamer">
-                <button>gamer 1</button>
+        <div class="intro">
+            <div class="description text-center">
+                <h1>Rock, Papper, Scissors</h1>
+                <h3>Приветствую Вас, дорогие игроки!</h3>
+                <p>Сейчас вам предстоит поиграть в знаменитую игру. Выиграет сильнейший!</p>
+                <p>Введите свои имена и погружайтесь в безумства эмоций!</p>
             </div>
-            <div class="gamer">
-                <button>gamer 2</button>
+            <div class="inputs">
+                <div class="block_input">
+                    <label for="gamer-1">Игрок номер 1</label>
+                    <input type="text" name="gamer-1" id="gamer-1">
+                </div>
+                <div class="block_input">
+                    <label for="gamer-2">Игрок номер 2</label>
+                    <input type="text" name="gamer-2" id="gamer-2">
+                </div>
+            </div>
+            <div class="block_start_btn text-center">
+                <button>Start</button>
             </div>
         </div>
-        <div class="block_card">
-            <div class="card_first_gamer">
-                <img alt="">
+        <div class="game">
+            <div class="block_gamer">
+                <div class="gamer">
+                    <button>gamer 1</button>
+                </div>
+                <div class="gamer">
+                    <button>gamer 2</button>
+                </div>
             </div>
+            <div class="block_card">
+                <div class="card_first_gamer">
+                    <img alt="">
+                </div>
 
-            <div class="card_second_gamer">
-                <img alt="">
-            </div>
+                <div class="card_second_gamer">
+                    <img alt="">
+                </div>
 
-        </div>
-        <div class="block_score">
-            <div class="score_1">
-                <p>Счет: <span>0</span></p>
             </div>
-            <div class="score_2">
-                <p>Счет: <span>0</span></p>
+            <div class="block_score">
+                <div class="score_1">
+                    <p>Счет: <span>0</span></p>
+                </div>
+                <div class="score_2">
+                    <p>Счет: <span>0</span></p>
+                </div>
+            </div>
+            <div class="block_result">
+                <div class="result">
+                    <p></p>
+                </div>
+                <button>result</button>
             </div>
         </div>
-        <div class="block_result">
-            <div class="result">
-                <p></p>
-            </div>
-            <button>result</button>
-        </div>
-
     </div>
 
     <script src="js/jquery.js"></script>
